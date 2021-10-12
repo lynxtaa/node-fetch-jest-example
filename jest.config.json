@@ -1,0 +1,17 @@
+{
+	"resetMocks": true,
+	"roots": ["<rootDir>/src"],
+	"setupFilesAfterEnv": ["<rootDir>/src/jest/setupTests.ts"],
+	"extensionsToTreatAsEsm": [".ts"],
+	"testEnvironment": "node",
+	"transform": {
+		"\\.[jt]sx?$": [
+			"babel-jest",
+			{
+				"babelrc": false,
+				"presets": ["@babel/preset-typescript"],
+				"plugins": ["@babel/plugin-proposal-optional-chaining"]
+			}
+		]
+	}
+}
