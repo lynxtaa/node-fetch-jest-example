@@ -24,6 +24,7 @@
 			"warn",
 			{ "alphabetize": { "order": "asc" }, "newlines-between": "always" }
 		],
-		"import/newline-after-import": "warn"
+		"import/newline-after-import": "warn",
+		"import/no-unresolved": "off"
 	}
 }
