@@ -4,7 +4,6 @@
   "description": "",
   "author": "Alex Kondratyuk <lynxtaa@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,6 +23,7 @@
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "@babel/preset-typescript": "7.16.7",
     "@lynxtaa/prettier-config": "^0.1.1",
     "@types/jest": "27.4.0",

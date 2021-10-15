@@ -1,4 +1,4 @@
-import { server } from './server.js'
+import { server } from './server'
 
 beforeAll(() => server.listen())
 
