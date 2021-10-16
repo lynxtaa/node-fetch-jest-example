@@ -11,6 +11,14 @@
   "simple-git-hooks": {
     "pre-commit": "npx pretty-quick --staged"
   },
+  "prettier": {
+    "printWidth": 90,
+    "useTabs": true,
+    "semi": false,
+    "singleQuote": true,
+    "quoteProps": "consistent",
+    "trailingComma": "all"
+  },
   "scripts": {
     "prebuild": "rimraf dist/*",
     "build": "tsc --project tsconfig.build.json",
@@ -23,7 +31,6 @@
     "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-optional-chaining": "7.14.5",
     "@babel/preset-typescript": "7.15.0",
     "@types/jest": "27.0.2",
     "is-ci-cli": "2.2.0",
